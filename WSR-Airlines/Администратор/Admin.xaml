@@ -9,32 +9,23 @@
         WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
 
     <Grid>
-        <Border Name="BorderLog" CornerRadius="10" Visibility="Visible" BorderThickness="0,7,0,0" Padding="1,0,0,0" Margin="0,0,-0.4,0">
-            <!--Для закругления краёв-->
-            <Border.Background>
-                <LinearGradientBrush>
-                    <!--<GradientStop Color="#f8acff" Offset="0.0"/>-->
-                    <GradientStop Color="#064B66" Offset="1.0"/>
-                </LinearGradientBrush>
-                <!--Градиент-->
-            </Border.Background>
-        </Border>
+        <Border Name="BorderLog" CornerRadius="10" Visibility="Visible" BorderThickness="0,7,0,0" Padding="1,0,0,0" Margin="0,0,-0.4,0" Background="#064B66"/>
 
 
-        <ToolBar Height="25" VerticalAlignment="Top">
+        <ToolBar Height="40" VerticalAlignment="Top">
             <ToggleButton>
-                <Button Content="Add user" FontSize="12"/>
+                <Button Content="Добавить пользователя" FontSize="12" Click="Add_Click"/>
             </ToggleButton>
             <Separator />
             <Button>
-                <Button Content="Exit" FontSize="12" />
+                <Button Content="Выйти" FontSize="12" Click="Exit_Click"/>
             </Button>
         </ToolBar>
 
-        <TextBlock FontSize="12" Margin="22,76,1030,549" Text="Office:" Foreground="White" />
-        <ComboBox Margin="82,76,862,549" />
-        <DataGrid Margin="22,124,27,58" d:ItemsSource="{d:SampleData ItemCount=5}" ColumnWidth="*" />
-        <Button Content="Change Role" HorizontalAlignment="Left" Margin="22,616,0,0" VerticalAlignment="Top"/>
-        <Button Content="Enable/Disable Login" HorizontalAlignment="Left" Margin="160,616,0,0" VerticalAlignment="Top"/>
+        <TextBlock FontSize="12" Margin="22,76,1030,549" Text="Офис:" Foreground="White" />
+        <ComboBox Margin="82,76,862,549" Name="office" />
+        <DataGrid x:Name="data" Margin="22,124,27,58" d:ItemsSource="{d:SampleData ItemCount=5}" ColumnWidth="*" />
+        <Button Content="Изменить роль" HorizontalAlignment="Left" Margin="22,616,0,0" VerticalAlignment="Top" Click="Edit_Click"/>
+        <Button Content="Включить/выключить пользователя" HorizontalAlignment="Left" Margin="160,616,0,0" VerticalAlignment="Top" Click="Enable_disable_Click"/>
     </Grid>
 </Window>

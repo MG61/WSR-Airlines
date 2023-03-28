@@ -22,7 +22,7 @@
                 <!--Градиент-->
             </Border.Background>
         </Border>
-        <Image Source="/mainlogo.png" Margin="206,44,204,463"/>
+        <Image Source="/mainlogo.png" Margin="206,36,204,471"/>
         <TextBlock  Text="ЛОГИН:" FontWeight="Bold" FontSize="30" TextAlignment="Center" VerticalAlignment="Center" Margin="164,235,805,371.6" Foreground="White" Height="43" FontFamily="Britannic Bold"/>
         <TextBox Name="LOG" Background="White" FontWeight="Bold" FontSize="30" TextAlignment="Center" VerticalContentAlignment="Center" Margin="312,213,230,356.6" BorderBrush="White" BorderThickness="2" Foreground="SkyBlue" FontFamily="Britannic Bold"/>
         <TextBlock  Text="ПАРОЛЬ:" FontWeight="Bold" FontSize="30" TextAlignment="Center" VerticalAlignment="Top" Margin="126,327,788,0" Foreground="White" Height="43" FontFamily="Britannic Bold"/>
